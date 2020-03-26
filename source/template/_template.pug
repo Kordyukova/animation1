@@ -1,0 +1,29 @@
+include mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(http-equiv='content-type' content="text/html; charset=utf-8")
+    title #{title}
+    meta(content="" name="author")
+    meta(name = "msapplication-TileColor" content = "#0E2B5E")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    base(href='/')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic' rel='stylesheet')
+    link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/setup.css')
+    link(rel='stylesheet' href='/assets/css/main.css')
+    <!--[if lt IE 9]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body
+    block content
+    script(src='/assets/js/foundation.js' defer)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.7/pixi.min.js' )
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js' )
+    script(src='https://cdn.jsdelivr.net/gh/hmongouachon/rgbShiftSlider/js/rgbShiftSlider.min.js' )
+    script(src='/assets/js/app.js' defer)
